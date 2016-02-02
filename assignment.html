@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="assignment.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="ass.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+</head>
+<body>
+<script>
+var myFirebaseRef = new Firebase("https://trial-demo.firebaseio.com/");
+myFirebaseRef.child("news1").on("value", function(snapshot) {
+ 
+  document.getElementById("news-1").innerHTML=snapshot.val();
+});
+myFirebaseRef.child("news2").on("value", function(snapshot) {
+  document.getElementById("news-2").innerHTML=snapshot.val();
+});
+myFirebaseRef.child("news3").on("value", function(snapshot) {
+  document.getElementById("news-3").innerHTML=snapshot.val();
+});
+myFirebaseRef.child("news4").on("value", function(snapshot) {
+  document.getElementById("news-4").innerHTML=snapshot.val();
+});
+</script>
+<header class="hf">
+<h1><b>Sears Holdings</b></h1>
+<h1><b>India</b></h1>
+</header>
+
+<section id="mid1" class="mid">
+<section>
+<img src="Sears_Holdings_Corporation.png" height="100" width="300" class="image">
+<p>While we strive to provide our associates with a healthy work-life balance at Sears Holdings India (SHI), we understand the importance of providing equilibrium at work itself. Each associate is a motivated professional in the midst of a highly qualified peer group, capable leaders and innovation-driven projects. Career paths are tailor-made keeping in mind that every single associate has unique skills which can be honed further to add more value. There is always something new to learn and look forward to at SHI.At SHI, we are not all about work! We engage our associates and their families in many ways. From high-energy driven cricket tournaments to festive cultural days, we have it all. Not only are these events for our associates, but they are driven by the associates too.</p>
+</section>
+<section>
+<img src="Sears_Holdings_Corporation.png" height="100" width="300" class="image">
+<p>At Sears Holdings India (SHI)‚ we understand the challenges faced across the various operations undertaken here. With the best talent and resources in place‚ SHI provides you a platform to enrich your career in a dynamic work environment.
+SHI gives you a platform to work on world-class technologies with hands-on project experience. Some of the most niche skills and technologies are being used and deployed across projects within SHI.
+Apart from exposure to advanced technologies, associates joining SHI may have an opportunity to travel onsite to gain more exposure to the project, knowledge transfer and meet with SHC team members.</p>
+</section>
+</section>
+
+<section id="mid2" class="mid">
+<h2>Latest News</h2>
+<hr>
+
+<h3>The Craftsman® Brand Returns to Motorsports as Title Sponsor of the World of Outlaws</h3>
+<section  id="news-1">
+<p><a href="#">Read More</a></p>
+</section>
+<hr>
+
+<h3>Kmart Makes Throwing the Ultimate Game Party for the Ultimate Game Day Easy, Fun and Affordable</h3>
+<section id="news-2">
+<p><a href="#">Read More</a></p>
+</section>
+<hr>
+
+<h3>Kmart Launches Pharmacy Savings Plus Program Helping Shoppers Save Hundreds of Dollars on Prescriptions Each Year</h3>
+<section  id="news-3">
+<p><a href="#">Read More</a></p>
+</section>
+<hr>
+
+<h3>Kmart Resolves to Help Shoppers 'Fit in the Fun' in 2016</h3>
+<section  id="news-4">
+<p><a href="#">Read More</a></p>
+</section>
+
+</section>
+
+<footer>
+
+<section id="footer1" class="footer_com hf">
+<h3><i class="fa fa-home"></i> Corporate Office</h3>
+<p><b>SEARS IT and Management Services India</b></p>
+<p>EON Free Zone, Cluster C,Wing 2, 7th Floor,</p>
+<p>MIDC Kharadi Knowledge Park,Pune 411 014.</p>
+<p><i class="fa fa-phone"></i> 020-67308500</p>
+<p><i class="fa fa-envelope"></i> shi.communications@searshc.com</p>
+</section>
+<section id="footer2" class="footer_com hf">
+<h2>Contact Us</h2>
+<p>Fields marked with * are required</p>
+<form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+<ul>
+<li>Name: <input type="text" name="name" size="30px" Placeholder="Enter your name"><br/></li>
+<li>Email: <input type="email" name="email" size="30px" Placeholder="Enter your email id"><br/></li>
+<li>Message: <textarea name="message" size="40px" Placeholder="Enter your message"></textarea></li>
+<li><input type="submit" value="SUBMIT" style="height:35px;"></li>
+</ul>
+</form>  
+</section>
+
+</footer>
+</body>
+</html>
