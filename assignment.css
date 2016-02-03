@@ -27,6 +27,12 @@ p{
     width: 59%;
 	margin-left:5px;
 }
+.trunc {
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .footer_com{
     float: left;
     padding-left:15px;  

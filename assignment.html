@@ -11,8 +11,8 @@
 <script>
 var myFirebaseRef = new Firebase("https://trial-demo.firebaseio.com/");
 myFirebaseRef.child("news1").on("value", function(snapshot) {
- 
-  document.getElementById("news-1").innerHTML=snapshot.val();
+    
+	document.getElementById("news-1").innerHTML=snapshot.val();
 });
 myFirebaseRef.child("news2").on("value", function(snapshot) {
   document.getElementById("news-2").innerHTML=snapshot.val();
@@ -32,13 +32,22 @@ myFirebaseRef.child("news4").on("value", function(snapshot) {
 <section id="mid1" class="mid">
 <section>
 <img src="Sears_Holdings_Corporation.png" height="100" width="300" class="image">
-<p>While we strive to provide our associates with a healthy work-life balance at Sears Holdings India (SHI), we understand the importance of providing equilibrium at work itself. Each associate is a motivated professional in the midst of a highly qualified peer group, capable leaders and innovation-driven projects. Career paths are tailor-made keeping in mind that every single associate has unique skills which can be honed further to add more value. There is always something new to learn and look forward to at SHI.At SHI, we are not all about work! We engage our associates and their families in many ways. From high-energy driven cricket tournaments to festive cultural days, we have it all. Not only are these events for our associates, but they are driven by the associates too.</p>
+<p>While we strive to provide our associates with a healthy work-life balance at Sears Holdings India (SHI), we understand the importance of providing equilibrium at work itself. 
+Each associate is a motivated professional in the midst of a highly qualified peer group, capable leaders and innovation-driven projects. 
+Career paths are tailor-made keeping in mind that every single associate has unique skills which can be honed further to add more value. 
+There is always something new to learn and look forward to at SHI.At SHI, we are not all about work! We engage our associates and their families in many ways.
+ From high-energy driven cricket tournaments to festive cultural days, we have it all. Not only are these events for our associates, but they are driven by the associates too. 
+The SPICE (Sears People Interactive and Collaborative Events) Committee is a conglomeration of associates who are driven to making our company fun, fulfilling and festive.
+ We've started strong and have a long way to go...</p>
 </section>
 <section>
 <img src="Sears_Holdings_Corporation.png" height="100" width="300" class="image">
-<p>At Sears Holdings India (SHI)‚ we understand the challenges faced across the various operations undertaken here. With the best talent and resources in place‚ SHI provides you a platform to enrich your career in a dynamic work environment.
-SHI gives you a platform to work on world-class technologies with hands-on project experience. Some of the most niche skills and technologies are being used and deployed across projects within SHI.
-Apart from exposure to advanced technologies, associates joining SHI may have an opportunity to travel onsite to gain more exposure to the project, knowledge transfer and meet with SHC team members.</p>
+<p>At Sears Holdings India (SHI), we understand the challenges faced across the various operations undertaken here. 
+With the best talent and resources in place‚ SHI provides you a platform to enrich your career in a dynamic work environment.
+SHI gives you a platform to work on world-class technologies with hands-on project experience. 
+Some of the most niche skills and technologies are being used and deployed across projects within SHI.
+Apart from exposure to advanced technologies, associates joining SHI may have an opportunity to travel onsite to gain more exposure to the project, knowledge transfer and meet with SHC team members.
+SHI also has various features and benefits for associates to help them advance in their career and make them more comfortable within the organization.</p>
 </section>
 </section>
 
@@ -46,28 +55,22 @@ Apart from exposure to advanced technologies, associates joining SHI may have an
 <h2>Latest News</h2>
 <hr>
 
-<h3>The Craftsman® Brand Returns to Motorsports as Title Sponsor of the World of Outlaws</h3>
-<section  id="news-1">
-<p><a href="#">Read More</a></p>
-</section>
+<section id="news-1" class="trunc"></section>
+<p><a href="news.html">Read More</a></p>
 <hr>
 
-<h3>Kmart Makes Throwing the Ultimate Game Party for the Ultimate Game Day Easy, Fun and Affordable</h3>
-<section id="news-2">
-<p><a href="#">Read More</a></p>
-</section>
+<section id="news-2" class="trunc"></section>
+<p><a href="news2.html">Read More</a></p>
+
 <hr>
 
-<h3>Kmart Launches Pharmacy Savings Plus Program Helping Shoppers Save Hundreds of Dollars on Prescriptions Each Year</h3>
-<section  id="news-3">
-<p><a href="#">Read More</a></p>
-</section>
+<section  id="news-3" class="trunc"></section>
+<p><a href="news3.html">Read More</a></p>
+
 <hr>
 
-<h3>Kmart Resolves to Help Shoppers 'Fit in the Fun' in 2016</h3>
-<section  id="news-4">
-<p><a href="#">Read More</a></p>
-</section>
+<section  id="news-4" class="trunc"></section>
+<p><a href="news4.html">Read More</a></p>
 
 </section>
 
